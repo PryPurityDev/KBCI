@@ -6,4 +6,4 @@ description: Ban items from a players saved hotbar in creative mode.
 permissions:
   kbci.bypass:
     description: Allows the player to bypass hotbar cleaning restrictions.
-    default: false
+    default: op

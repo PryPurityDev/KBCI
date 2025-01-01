@@ -58,9 +58,11 @@ public final class KBCI extends JavaPlugin implements Listener {
                 @Override
                 public void run() {
                     for (int i = 0; i < 9; i++) {
-                        Material itemType = event.getWhoClicked().getInventory().getItem(i).getType();
-                        if (blacklistItems.contains(itemType)) {
-                            event.getWhoClicked().getInventory().clear(i);
+                        if (event.getWhoClicked().getInventory().getItem(i) != null) {
+                            Material itemType = event.getWhoClicked().getInventory().getItem(i).getType();
+                            if (blacklistItems.contains(itemType)) {
+                                event.getWhoClicked().getInventory().clear(i);
+                            }
                         }
                     }
                 }
