@@ -22,6 +22,10 @@ public final class KBCI extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+        if (!getDataFolder().exists()) {
+            getDataFolder().mkdirs();
+        }
+
         loadbanneditems();
         Bukkit.getPluginManager().registerEvents(this, this);
     }
