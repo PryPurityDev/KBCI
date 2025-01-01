@@ -1,0 +1,4 @@
+name: KBCI
+version: '0.1-SNAPSHOT'
+main: org.picklecraft.prypurity.kBCI.KBCI
+api-version: '1.21'
