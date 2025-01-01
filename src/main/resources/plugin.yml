@@ -2,3 +2,8 @@ name: KBCI
 version: '0.1-SNAPSHOT'
 main: org.picklecraft.prypurity.kBCI.KBCI
 api-version: '1.21'
+description: Ban items from a players saved hotbar in creative mode.
+permissions:
+  kbci.bypass:
+    description: Allows the player to bypass hotbar cleaning restrictions.
+    default: false
